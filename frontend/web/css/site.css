@@ -1,3 +1,21 @@
+@font-face{
+    font-family: 'Cloud-Light';
+    src: url('../fonts/Cloud-Light.ttf') format('truetype');
+    /* src: url('../fonts/thsarabunnew-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/thsarabunnew-webfont.woff') format('woff'),
+          url('../fonts/EkkamaiStandard-Light.ttf') format('truetype');*/
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Cloud-Bold';
+    src: url('../fonts/Cloud-Bold.ttf') format('truetype');
+    /* src: url('../fonts/thsarabunnew-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/thsarabunnew-webfont.woff') format('woff'),
+          url('../fonts/EkkamaiStandard-Light.ttf') format('truetype');*/
+    font-weight: normal;
+    font-style: normal;
+}
 html,
 body {
     height: 100%;
@@ -22,13 +40,17 @@ body {
 }
 
 .jumbotron {
+    margin-top: 50px;
     text-align: center;
     background-color: transparent;
+    padding-top: 100px;
 }
 
 .jumbotron .btn {
     font-size: 21px;
     padding: 14px 24px;
+    color: #000000;
+    /*color: #c7ddef;*/
 }
 
 .not-set {
@@ -96,6 +118,9 @@ a.desc:after {
 }
 
 /* align the logout "link" (button in form) of the navbar */
+.nav {
+    background: #ffffff;
+}
 .nav li > form > button.logout {
     padding: 15px;
     border: none;
@@ -117,4 +142,8 @@ a.desc:after {
 
 .nav > li > form > button.logout:focus {
     outline: none;
+    color: #2b669a;
 }
+
+/* Custom*/
+
