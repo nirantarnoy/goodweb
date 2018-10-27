@@ -10,8 +10,8 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
-Yii::$app->name="Goodoper";
-$this->title = "Goodoper";
+Yii::$app->name="goodoper";
+$this->title = "goodoper";
 
 AppAsset::register($this);
 $this->registerCss('
@@ -59,6 +59,19 @@ $this->registerCss('
     #myBtn:hover {
         background-color: #555;
     }
+    
+    .navbar-brand{
+      color: #1b6d85;
+      font-weight: bold;
+      font-size: 26px;
+    }
+    #nav-home,#nav-service,#nav-port,#nav-about,#nav-contact,#nav-product{
+      color: #000000;
+      font-size: 18px;
+    }
+    .nav-menu{
+      color: #000000;
+    }
 
 ');
 
@@ -87,9 +100,9 @@ $this->registerCss('
         ],
     ]);
     $menuItems = [
-        ['label' => 'หน้าแรก', 'options'=>['id'=>'nav-home','href'=>'']],
+        ['label' => 'หน้าแรก', 'options'=>['id'=>'nav-home','style'=>'color: #000']],
         ['label' => 'บริการ', 'options'=>['id'=>'nav-service','href'=>'#good-service']],
-        ['label' => 'สินค้า', 'url' => ['/site/index']],
+        ['label' => 'สินค้า', 'options'=>['id'=>'nav-product','href'=>'#good-product']],
         ['label' => 'ผลงาน', 'options'=>['id'=>'nav-port','href'=>'#good-port']],
         ['label' => 'เกี่ยวกับเรา', 'options'=>['id'=>'nav-about','href'=>'#good-about']],
         ['label' => 'ติดต่อเรา','options'=>['id'=>'nav-contact','href'=>'#good-contact']],
@@ -108,7 +121,7 @@ $this->registerCss('
             . '</li>';
     }
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav navbar-right nav-menu'],
         'items' => $menuItems,
     ]);
     NavBar::end();

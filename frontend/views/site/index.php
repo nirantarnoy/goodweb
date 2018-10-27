@@ -12,7 +12,7 @@ $this->title = 'goodoper';
 
         <p class="lead" style="color: #ffffff">ระบบซื้อขาย ระบบสต๊อกสินค้า ระบบงานซ่อมบำรุง ฯลฯ</p>
 
-        <p><a class="btn btn-lg btn-warning" href="#">ทดลองใช้งาน</a></p>
+        <p><a class="btn btn-lg btn-warning" style="color: #000" href="#">ทดลองใช้งาน</a></p>
     </div>
 
 
@@ -123,10 +123,10 @@ $this->title = 'goodoper';
                             ]);
                             ?>
 
-                            <div class="item-class"><img src="../web/images/client_1.png" alt="Image 1"></div>
+                            <div class="item-class"><img src="../web/images/port_2.png" alt="Image 1"></div>
                             <div class="item-class"><img src="../web/images/client_2.jpg" alt="Image 2"></div>
                             <div class="item-class"><img src="../web/images/client_3.jpg" alt="Image 3"></div>
-                            <div class="item-class"><img src="../web/images/client_4.png" alt="Image 4"></div>
+                            <div class="item-class"><img src="../web/images/port_1.png" alt="Image 4"></div>
 
 
                             <?php OwlCarouselWidget::end(); ?>
@@ -191,12 +191,12 @@ $this->title = 'goodoper';
                                             <a href="https://www.facebook.com/Goodoper-1033800079972006/" target="_blank">
                                                 <img src="../web/images/facebook.png" width="5%" alt="">
                                             </a>
-                                            <a href="#" class="" target="_blank">
+                                            <a href="javascript:void(0)" class="" onclick="showline();">
                                                 <img src="../web/images/line.png" width="4%">
                                             </a>
-                                            <a href="#" target="_blank" class="">
-                                                <img src="../web/images/google+.png" width="5%">
-                                            </a>
+<!--                                            <a href="#" target="_blank" class="">-->
+<!--                                                <img src="../web/images/google+.png" width="5%">-->
+<!--                                            </a>-->
                                         </div>
                                     </div>
                         </div>
@@ -211,7 +211,25 @@ $this->title = 'goodoper';
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">กลับขึ้นข้างบน</button>
 </div>
+    <div id="lineModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success btn-append-ok" data-dismiss="modal">ตกลง</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php
+
 $js =<<<JS
    $(function() {
      window.onscroll = function() {scrollFunction()};
@@ -243,6 +261,9 @@ $js =<<<JS
        var aid = ".site-index"
         // alert(aid);
          $('html,body').animate({scrollTop: $(aid).offset().top -100},'slow');
+    }
+    function showline() {
+       $("#lineModal").modal("show");
     }
 JS;
 
