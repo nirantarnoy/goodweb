@@ -7,12 +7,93 @@ $this->title = 'goodoper';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron" style="background: #2aabd2;width: 100%; ">
-        <h1>บริการออกแบบและพัฒนาระบบงานทั่วไป</h1>
 
-        <p class="lead" style="color: #ffffff">ระบบซื้อขาย ระบบสต๊อกสินค้า ระบบงานซ่อมบำรุง ฯลฯ</p>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-        <p><a class="btn btn-lg btn-warning" style="color: #000" href="#">ทดลองใช้งาน</a></p>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+<!--                <img src="la.jpg" alt="Los Angeles" style="width:100%;">-->
+                <div class="jumbotronx" style="background: #FFFFFF;width: 100%;height: 500px;text-align: center;">
+
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <br> <br> <br> <br><br>
+                            <h1 style="color: #1b6d85;font-weight: bold">PM & Helpdesk System</h1>
+
+                            <p class="lead" style="color: #ec971f;font-weight: bold">ระบบบริหารจัดการงานซ่อมบำรุงและช่วยเหลือ</p>
+
+                            <p><a class="btn btn-lg btn-primary" style="color: #f3f3f3" href="#">เร็วๆนี้</a></p>
+                            <div class="btn-group">
+                                <image src="../web/images/get_on_google.png" style="width: 30%;"></image>
+                                <image src="../web/images/sn-appstore.png" style="width: 22%;"></image>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <br> <br> <br>
+                            <image src="../web/images/pm_banner.png" style="width: 100%;margin-top: 10%;"></image>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="item">
+                <!--                <img src="la.jpg" alt="Los Angeles" style="width:100%;">-->
+                <div class="jumbotronx" style="background: #eea236;width: 100%;height: 500px;text-align: center;">
+                    <br> <br> <br> <br>
+                    <h1 style="color: #303030">Inventory & Warehouse Management System</h1>
+
+                    <p class="lead" style="color: #303030">ระบบบริหารสต๊อกสินค้า ซื้อ ขาย เบิกจ่าย</p>
+
+                    <p><a class="btn btn-lg btn-primary" style="color: #000" href="#">เร็วๆนี้</a></p>
+                </div>
+
+            </div>
+            <div class="item">
+<!--                <img src="chicago.jpg" alt="Chicago" style="width:100%;">-->
+                <div class="jumbotronx" style="background: #2aabd2;width: 100%;height: 500px;text-align: center ">
+                    <br> <br> <br> <br>
+                    <h1>บริการออกแบบและพัฒนาระบบงานทั่วไป</h1>
+
+                    <p class="lead" style="color: #ffffff">ระบบซื้อขาย ระบบสต๊อกสินค้า ระบบงานซ่อมบำรุง ฯลฯ</p>
+
+                    <p><a class="btn btn-lg btn-warning" style="color: #000" href="#">ทดลองใช้งาน</a></p>
+                </div>
+
+            </div>
+
+<!--            <div class="item">-->
+<!--                <img src="ny.jpg" alt="New york" style="width:100%;">-->
+<!--                <div class="jumbotron" style="background: #2aabd2;width: 100%; ">-->
+<!--                    <h1>บริการออกแบบและพัฒนาระบบงานทั่วไป</h1>-->
+<!---->
+<!--                    <p class="lead" style="color: #ffffff">ระบบซื้อขาย ระบบสต๊อกสินค้า ระบบงานซ่อมบำรุง ฯลฯ</p>-->
+<!---->
+<!--                    <p><a class="btn btn-lg btn-warning" style="color: #000" href="#">ทดลองใช้งาน</a></p>-->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
 

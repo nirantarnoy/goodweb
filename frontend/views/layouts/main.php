@@ -85,6 +85,7 @@ $this->registerCss('
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+    <link rel="shortcut icon" type="image/ico" href="logo2.ico" />
     <?php $this->head() ?>
 </head>
 <body>
@@ -93,19 +94,20 @@ $this->registerCss('
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        //'brandLabel' => Yii::$app->name,
+        'brandLabel' => "<image src='../web/images/1.png' style='width: 60%;margin-top: -5px;'></image>",
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'nav navbar-fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => 'หน้าแรก', 'options'=>['id'=>'nav-home','style'=>'color: #000']],
-        ['label' => 'บริการ', 'options'=>['id'=>'nav-service','href'=>'#good-service']],
-        ['label' => 'สินค้า', 'options'=>['id'=>'nav-product','href'=>'#good-product']],
-        ['label' => 'ผลงาน', 'options'=>['id'=>'nav-port','href'=>'#good-port']],
-        ['label' => 'เกี่ยวกับเรา', 'options'=>['id'=>'nav-about','href'=>'#good-about']],
-        ['label' => 'ติดต่อเรา','options'=>['id'=>'nav-contact','href'=>'#good-contact']],
+        ['label' => 'หน้าแรก', 'options'=>['id'=>'nav-home','style'=>'color: #000;font-weight: bold']],
+        ['label' => 'บริการ', 'options'=>['id'=>'nav-service','href'=>'#good-service','style'=>'color: #000;font-weight: bold']],
+        ['label' => 'สินค้า', 'options'=>['id'=>'nav-product','href'=>'#good-product','style'=>'color: #000;font-weight: bold']],
+        ['label' => 'ผลงาน', 'options'=>['id'=>'nav-port','href'=>'#good-port','style'=>'color: #000;font-weight: bold']],
+        ['label' => 'เกี่ยวกับเรา', 'options'=>['id'=>'nav-about','href'=>'#good-about','style'=>'color: #000;font-weight: bold']],
+        ['label' => 'ติดต่อเรา','options'=>['id'=>'nav-contact','href'=>'#good-contact','style'=>'color: #000;font-weight: bold']],
     ];
     if (Yii::$app->user->isGuest) {
       //  $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
